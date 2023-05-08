@@ -126,9 +126,9 @@ const editaPaciente = async (id, paciente) => {
   await fetch(`https://projectsystem.onrender.com/pacientes/${id}`, {
     method: "PATCH",
     headers: {
-      Accept: "application/json, text/plain, */*",
-      "Content-Type": "application/json",
+      "Content-Type": "application/json"
     },
+    body: JSON.stringify(paciente)
   });
 };
 
