@@ -177,9 +177,6 @@ if (formularioModal) {
       // Se o formulário está sendo usado para criar um novo paciente, envia os dados do paciente para a API
       await addPaciente(paciente);
     }
-      setTimeout(() => {
-    location.reload();
-  }, 1000);
 
     // Fecha o modal após o envio dos dados
     closeModal();
@@ -187,7 +184,6 @@ if (formularioModal) {
 }
 
 const preencheFormularioModal = async (id) => {
-  console.log("Iniciando o preenchimento do formulário modal");
   // Busca os dados do paciente na API usando seu ID
   const response = await fetch(`https://projectsystem.onrender.com/pacientes/${id}`);
   const paciente = await response.json();
@@ -211,8 +207,9 @@ const preencheFormularioModal = async (id) => {
 
   // Adiciona o ID do paciente ao formulário para indicar que ele está sendo usado para editar um paciente existente
   formularioModal.setAttribute("data-id-paciente", id);
-
-  console.log("Formulário modal preenchido");
+  setTimeout(() => {
+    location.reload();
+  }, 1000);
 };
 
 // Função que cria uma nova linha na tabela de pacientes
