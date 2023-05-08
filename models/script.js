@@ -207,9 +207,7 @@ const preencheFormularioModal = async (id) => {
 
   // Adiciona o ID do paciente ao formulário para indicar que ele está sendo usado para editar um paciente existente
   formularioModal.setAttribute("data-id-paciente", id);
-  setTimeout(() => {
-    location.reload();
-  }, 1000);
+
 };
 
 // Função que cria uma nova linha na tabela de pacientes
