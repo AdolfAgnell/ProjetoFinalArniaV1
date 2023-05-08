@@ -203,9 +203,6 @@ const preencheFormularioModal = async (id) => {
 
   // Adiciona o ID do paciente ao formulário para indicar que ele está sendo usado para editar um paciente existente
   formularioModal.setAttribute("data-id-paciente", id);
-
-  // recarrega a página no final da função
-  location.reload();
 };
 
 // Função que cria uma nova linha na tabela de pacientes
@@ -259,3 +256,7 @@ document.getElementById("exit-button").addEventListener("click", () => {
     exitModal.style.display = "block";
   }
 });
+// Função que atualiza a página
+function atualizaPagina() {
+  location.reload();
+}
