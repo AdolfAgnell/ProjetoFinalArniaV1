@@ -216,7 +216,7 @@ const criaLinha = (paciente) => {
   tdCPF.innerText = paciente.CPF;
   tdfuncoes.innerHTML = `  <button class="btn btn-primary" onclick="preencheFormularioModal(${paciente.id}); openModal()"><img src="/ProjetoFinalArniav1/pictures/edit_icon.png"></button>
   <button class="btn btn-danger" onclick="deletaPaciente(${paciente.id})"><img src="/ProjetoFinalArniav1/pictures/delete_icon.png" alt=""></button>
-  <a href="/ProjetoFinalArniav1/html/formulario.html" class="btn btn-warning"><img src="/ProjetoFinalArniav1/pictures/form_icon.png" alt=""></a>`;
+  <a href="/ProjetoFinalArniav1/formulario.html" class="btn btn-warning"><img src="/ProjetoFinalArniav1/pictures/form_icon.png" alt=""></a>`;
 
 
   tr.appendChild(tdId);
