@@ -28,7 +28,7 @@ if (document.getElementById("form")) {
     if (user.senha === confSenha) {
       // Adiciona o usuário na API e redireciona para a página inicial
       await addApi(user);
-      window.location = "/ProjetoFinalArniav1/index.html";
+      window.location = "/index.html";
     } else {
       window.alert("As senhas nao são semelhantes");
     }
@@ -66,7 +66,7 @@ if (document.getElementById("formulario")) {
           loginUserNameElement.textContent = user.name;
         }
 
-        window.location ="/ProjetoFinalArniav1/pacientes.html";
+        window.location ="/pacientes.html";
       }
     });
 
