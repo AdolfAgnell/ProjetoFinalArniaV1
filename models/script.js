@@ -135,9 +135,11 @@ const editaPaciente = async (id, paciente) => {
 
 // Deleta um paciente da API
 const deletaPaciente = async (id) => {
+  console.log("Iniciando a exclusão do paciente");
   await fetch(`https://projectsystem.onrender.com/pacientes/${id}`, {
     method: "DELETE",
   });
+  console.log("Paciente excluído");
   // recarrega a página no final da função
   location.reload();
 };
@@ -180,6 +182,7 @@ if (formularioModal) {
 }
 
 const preencheFormularioModal = async (id) => {
+  console.log("Iniciando o preenchimento do formulário modal");
   // Busca os dados do paciente na API usando seu ID
   const response = await fetch(`https://projectsystem.onrender.com/pacientes/${id}`);
   const paciente = await response.json();
@@ -203,6 +206,11 @@ const preencheFormularioModal = async (id) => {
 
   // Adiciona o ID do paciente ao formulário para indicar que ele está sendo usado para editar um paciente existente
   formularioModal.setAttribute("data-id-paciente", id);
+
+  console.log("Formulário modal preenchido");
+
+  // recarrega a página no final da função
+  location.reload();
 };
 
 // Função que cria uma nova linha na tabela de pacientes
@@ -256,7 +264,3 @@ document.getElementById("exit-button").addEventListener("click", () => {
     exitModal.style.display = "block";
   }
 });
-// Função que atualiza a página
-function atualizaPagina() {
-  location.reload();
-}
