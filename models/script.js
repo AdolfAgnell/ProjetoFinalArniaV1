@@ -28,7 +28,7 @@ if (document.getElementById("form")) {
     if (user.senha === confSenha) {
       // Adiciona o usuário na API e redireciona para a página inicial
       await addApi(user);
-      window.location = "/html/index.html";
+      window.location = "/ProjetoFinalArniav1/index.html";
     } else {
       window.alert("As senhas nao são semelhantes");
     }
