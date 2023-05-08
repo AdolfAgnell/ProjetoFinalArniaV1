@@ -177,13 +177,13 @@ if (formularioModal) {
       // Se o formulário está sendo usado para criar um novo paciente, envia os dados do paciente para a API
       await addPaciente(paciente);
     }
+      setTimeout(() => {
+    location.reload();
+  }, 1000);
 
     // Fecha o modal após o envio dos dados
     closeModal();
   });
-  setTimeout(() => {
-    location.reload();
-  }, 1000);
 }
 
 const preencheFormularioModal = async (id) => {
