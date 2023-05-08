@@ -1,0 +1,78 @@
+
+body>div {
+    width: 608px;
+    height: 608px;
+    border-radius: 16px;
+
+    margin: auto;
+    text-align: center;
+    background: #017849;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    margin: 60px 60px;
+    padding-top: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.input {
+    width: 379px;
+    height: 47px;
+    box-sizing: border-box;
+    border: 1px solid #BDBDBD;
+    border-radius: 8px;
+    background: #FFFFFF;
+    padding-left: 15px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    margin-top: 30px;
+}
+
+#entrar {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #017849;
+    border-color: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+}

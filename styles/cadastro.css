@@ -1,0 +1,100 @@
+
+
+.div1 {
+    display: block;
+    width: 522px;
+    height: 466px;
+    border-radius: 16px;
+
+    margin: auto;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+
+#logo {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+
+#p1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #00995D;
+}
+
+#p2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    color: #00995D;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.input {
+    width: 379px;
+    height: 47px;
+    box-sizing: border-box;
+    border: 1px solid #BDBDBD;
+    border-radius: 8px;
+    background: #FFFFFF;
+    padding-left: 15px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    margin-top: 30px;
+}
+
+#prosseguir {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px 0px 24px;
+    gap: 13px;
+    cursor: pointer;
+    width: 192px;
+    height: 48px;
+    margin-left: 257px;
+    margin-top: 40px;
+
+    color: #FFFFFF;
+    background: #00995D;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+#prosseguir>input {
+    all: unset;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+}

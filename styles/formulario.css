@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #e5e5e5;
+}
+
+header {
+  height: 79.75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#login{
+margin-right: 20px;
+}
+
+#bemVindo {
+  font-family: "Comfortaa";
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  color: #4f4f4f;
+}
+
+strong {
+  font-weight: bolder;
+  font-size: 24px;
+  line-height: 27px;
+}
+
+main {
+  padding: 0 4%;
+}
+
+#prontuario {
+  font-family: "Comfortaa";
+  font-size: 24px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+
+  color: #4f4f4f;
+}
+
+#logoImg {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 80px;
+  height: 80.75px;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#img {
+  margin: auto;
+}
+
+#pagBack {
+  font-family: "Comfortaa";
+  padding-right: 1050px;
+  color: #212121;
+}
+
+#conteudoTopo {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8%;
+  margin: 2% 0 2% 0;
+}
+
+#textInput {
+  display: flex;
+  width: 40%;
+}
+
+#barraDePesquisa {
+  width: 80%;
+  height: 48px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #bdbdbd;
+  border-radius: 24px 0px 0px 24px;
+}
+
+#botãoDePesquisar {
+  width: 20%;
+  text-align: center;
+  height: 48px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  line-height: 20px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  background: #00995d;
+  border-radius: 0px 30px 30px 0px;
+  border: none;
+}
+
+#box {
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  width: 340px;
+  height: 350px;
+  align-items: center;
+  padding-left: 24px;
+  padding-top: 24px;
+
+  border: 1px solid #e0e0e0;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#subtitulo {
+  width: 229px;
+  height: 22px;
+  margin-left: 24px;
+  margin-top: 24px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  color: #212121;
+  margin-bottom: 24px;
+}
+
+.icones {
+  font-family: "Montserrat";
+  color: #00995d;
+  margin: 0 8%;
+  display: flex;
+}
+
+.informacao {
+  font-family: "Montserrat";
+  color: #616161;
+  margin-left: 8%;
+}
+
+#conteudo {
+  margin-left: 380px;
+  margin-top: -374px;
+}
+
+#sessao {
+  background-color: #ffffff;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  padding: 0 8%;
+  margin-bottom: 50px;
+
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.sessao {
+  display: flex;
+  gap: 20px;
+}
+
+.txsessao {
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: #616161;
+}
+
+.txtBack {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border-left: solid 4px #00995d;
+  padding: 15px;
+}
+
+.tituloBox {
+  font-family: "Montserrat";
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 6px;
+}
+
+.subtitulo {
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: #616161;
+  margin-bottom: 2.5%;
+}
+
+.txtspan {
+  color: #2f80ed;
+}
+
+.backgroud {
+  background-color: #00995d;
+  width: 48px;
+  height: 48px;
+  left: 24px;
+  margin-top: -50px;
+  border-radius: 50%;
+  display: flex;
+}
+
+.boxConteudo {
+  margin-top: 2px;
+}
+
+.img {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+#linhaAzul {
+  width: 2px;
+  height: 45px;
+  background: #2f80ed;
+  margin-left: 46px;
+}
+
+.txtAzul {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border-left: solid 4px #2f80ed;
+  padding: 20px;
+}
+
+.fundoAzul {
+  background-color: #2f80ed;
+  width: 48px;
+  height: 48px;
+  left: 24px;
+  margin-top: -50px;
+  border-radius: 50%;
+  display: flex;
+}
+
+#linhaVerde{
+  width: 2px;
+  height: 45px;
+  background: #00995D;
+  margin-left: 40px;
+}
+footer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#rodape {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  all: unset;
+  color: #212121;
+}
