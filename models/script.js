@@ -1,7 +1,7 @@
 // Função assíncrona que faz uma requisição POST para a API
 // para adicionar um usuário ao banco de dados
 const addApi = async (usuario) => {
-  await fetch("http://localhost:3000/users", {
+  await fetch("https://projectsystem.onrender.com/users", {
     method: "POST",
     headers: {
       Accept: "application/json, text/plain, */*",
@@ -45,7 +45,7 @@ if (document.getElementById("formulario")) {
     const senha = document.getElementById("txSenha").value;
 
     // Faz uma requisição GET para a API buscando um usuário com o email fornecido
-    const apiResponse = await fetch(`http://localhost:3000/users?email=${email}`);
+    const apiResponse = await fetch(`https://projectsystem.onrender.com/users?email=${email}`);
     const users = await apiResponse.json();
 
     // Verifica se o email e senha são válidos
@@ -111,7 +111,7 @@ function closeModal() {
 
 // Envia os dados do paciente para a API
 const addPaciente = async (paciente) => {
-  await fetch("http://localhost:3000/pacientes", {
+  await fetch("https://projectsystem.onrender.com/pacientes", {
     method: "POST",
     headers: {
       Accept: "application/json, text/plain, */*",
@@ -123,7 +123,7 @@ const addPaciente = async (paciente) => {
 
 // Edita os dados de um paciente na API
 const editaPaciente = async (id, paciente) => {
-  await fetch(`http://localhost:3000/pacientes/${id}`, {
+  await fetch(`https://projectsystem.onrender.com/pacientes/${id}`, {
     method: "PATCH",
     headers: {
       Accept: "application/json, text/plain, */*",
@@ -135,7 +135,7 @@ const editaPaciente = async (id, paciente) => {
 
 // Deleta um paciente da API
 const deletaPaciente = async (id) => {
-  await fetch(`http://localhost:3000/pacientes/${id}`, {
+  await fetch(`https://projectsystem.onrender.com/pacientes/${id}`, {
     method: "DELETE",
   });
 };
@@ -179,7 +179,7 @@ if (formularioModal) {
 
 const preencheFormularioModal = async (id) => {
   // Busca os dados do paciente na API usando seu ID
-  const response = await fetch(`http://localhost:3000/pacientes/${id}`);
+  const response = await fetch(`https://projectsystem.onrender.com/pacientes/${id}`);
   const paciente = await response.json();
 
   // Preenche os campos do formulário com os dados do paciente
@@ -229,7 +229,7 @@ const criaLinha = (paciente) => {
 
 // Função que busca todos os pacientes na API e os exibe na tabela
 const exibePacientes = async () => {
-  const apiResponse = await fetch("http://localhost:3000/pacientes");
+  const apiResponse = await fetch("https://projectsystem.onrender.com/pacientes");
   const pacientes = await apiResponse.json();
 
   const tbody = document.querySelector("#pacientes tbody");
