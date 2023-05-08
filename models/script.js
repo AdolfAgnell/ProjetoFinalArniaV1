@@ -28,7 +28,7 @@ if (document.getElementById("form")) {
     if (user.senha === confSenha) {
       // Adiciona o usuário na API e redireciona para a página inicial
       await addApi(user);
-      window.location = "/ProjetoFinalArniav1/index.html";
+      window.location = "/index.html";
     } else {
       window.alert("As senhas nao são semelhantes");
     }
@@ -66,7 +66,7 @@ if (document.getElementById("formulario")) {
           loginUserNameElement.textContent = user.name;
         }
 
-        window.location ="/ProjetoFinalArniav1/pacientes.html";
+        window.location ="/pacientes.html";
       }
     });
 
@@ -214,9 +214,9 @@ const criaLinha = (paciente) => {
   tdId.innerText = paciente.id;
   tdNome.innerText = paciente.nome;
   tdCPF.innerText = paciente.CPF;
-  tdfuncoes.innerHTML = `  <button class="btn btn-primary" onclick="preencheFormularioModal(${paciente.id}); openModal()"><img src="/ProjetoFinalArniav1/pictures/edit_icon.png"></button>
-  <button class="btn btn-danger" onclick="deletaPaciente(${paciente.id})"><img src="/ProjetoFinalArniav1/pictures/delete_icon.png" alt=""></button>
-  <a href="/ProjetoFinalArniav1/formulario.html" class="btn btn-warning"><img src="/ProjetoFinalArniav1/pictures/form_icon.png" alt=""></a>`;
+  tdfuncoes.innerHTML = `  <button class="btn btn-primary" onclick="preencheFormularioModal(${paciente.id}); openModal()"><img src="/pictures/edit_icon.png"></button>
+  <button class="btn btn-danger" onclick="deletaPaciente(${paciente.id})"><img src="/pictures/delete_icon.png" alt=""></button>
+  <a href="/formulario.html" class="btn btn-warning"><img src="/pictures/form_icon.png" alt=""></a>`;
 
 
   tr.appendChild(tdId);
