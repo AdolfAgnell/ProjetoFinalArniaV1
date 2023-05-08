@@ -208,9 +208,6 @@ const preencheFormularioModal = async (id) => {
   formularioModal.setAttribute("data-id-paciente", id);
 
   console.log("Formulário modal preenchido");
-
-  // recarrega a página no final da função
-  location.reload();
 };
 
 // Função que cria uma nova linha na tabela de pacientes
