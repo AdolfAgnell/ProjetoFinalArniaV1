@@ -181,6 +181,9 @@ if (formularioModal) {
     // Fecha o modal após o envio dos dados
     closeModal();
   });
+  setTimeout(() => {
+    location.reload();
+  }, 1000);
 }
 
 const preencheFormularioModal = async (id) => {
@@ -263,36 +266,3 @@ document.getElementById("exit-button").addEventListener("click", () => {
     exitModal.style.display = "block";
   }
 });
-
-async function salvaAlteracoes() {
-  // Obtém o ID do paciente a partir do atributo "data-id-paciente" do formulário
-  const id = formularioModal.getAttribute("data-id-paciente");
-
-  // Cria um objeto com os dados atualizados do paciente
-  const dadosAtualizados = {
-    CPF: document.getElementById("cpf").value,
-    nome: document.getElementById("nome").value,
-    dataNascimento: document.getElementById("dataNasc").value,
-    email: document.getElementById("email").value,
-    sexoGenero: document.getElementById("sexoGenero").value,
-    nacionalidade: document.getElementById("nacionalidade").value,
-    naturalidade: document.getElementById("naturalidade").value,
-    profissao: document.getElementById("profissao").value,
-    escolaridade: document.getElementById("escolaridade").value,
-    estadoCivil: document.getElementById("estadoCivil").value,
-    mae: document.getElementById("mae").value,
-    pai: document.getElementById("pai").value
-  };
-
-  // Envia uma solicitação PUT para a API para salvar as alterações do paciente
-  await fetch(`https://projectsystem.onrender.com/pacientes/${id}`, {
-    method: "PUT",
-    headers: {
-      "Content-Type": "application/json"
-    },
-
-  });
-setTimeout(() => {
-    location.reload();
-  }, 1000);
-}
