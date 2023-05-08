@@ -130,9 +130,6 @@ const editaPaciente = async (id, paciente) => {
       "Content-Type": "application/json",
     },
   });
-setTimeout(() => {
-    location.reload();
-  }, 1000);
 };
 
 // Deleta um paciente da API
