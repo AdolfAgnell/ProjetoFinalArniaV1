@@ -138,6 +138,8 @@ const deletaPaciente = async (id) => {
   await fetch(`https://projectsystem.onrender.com/pacientes/${id}`, {
     method: "DELETE",
   });
+  // recarrega a página no final da função
+  location.reload();
 };
 
 // Adiciona um listener para o evento de submit do formulário do modal
@@ -201,6 +203,9 @@ const preencheFormularioModal = async (id) => {
 
   // Adiciona o ID do paciente ao formulário para indicar que ele está sendo usado para editar um paciente existente
   formularioModal.setAttribute("data-id-paciente", id);
+
+  // recarrega a página no final da função
+  location.reload();
 };
 
 // Função que cria uma nova linha na tabela de pacientes
