@@ -107,11 +107,6 @@ function closeModal() {
 
   // Redefine o texto do botão de salvar no modal
   document.querySelector("#formularioModal button[type=submit]").textContent = "Criar";
-
-  // aguarda 1 segundo e recarrega a página
-  setTimeout(() => {
-    location.reload();
-  }, 1000);
 }
 
 // Envia os dados do paciente para a API
