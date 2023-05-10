@@ -258,3 +258,21 @@ document.getElementById("exit-button").addEventListener("click", () => {
     exitModal.style.display = "block";
   }
 });
+filtroPesquisa = async () => {
+  const apiResponse = await fetch("https://projectsystem.onrender.com/pacientes");
+  const pacientes = await apiResponse.json();
+
+  const tbody = document.querySelector("#pacientes tbody");
+  tbody.innerHTML = "";
+
+  const filtro = document.getElementById("txpesquisa").value;
+
+ pacientes.forEach((paciente) => {
+  if (paciente.nome.toLowerCase().includes(filtro.toLowerCase()) || paciente.CPF.toLowerCase().includes(filtro.toLowerCase())) {
+    const tr = criaLinha(paciente);
+    tbody.appendChild(tr);
+  }
+});
+}
+
+document.getElementById("txpesquisa").addEventListener("keyup", filtroPesquisa);
